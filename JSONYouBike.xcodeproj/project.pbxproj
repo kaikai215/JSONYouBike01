@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		941621FD2BDB9E1400FC8B7A /* PlaceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941621FC2BDB9E1400FC8B7A /* PlaceTableViewController.swift */; };
+		941621FF2BDB9FCF00FC8B7A /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941621FE2BDB9FCF00FC8B7A /* PlaceTableViewCell.swift */; };
+		9466E6FB2BDCDAF70059E506 /* Iansui-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9466E6FA2BDCDAF70059E506 /* Iansui-Regular.ttf */; };
 		94E5D2822BD4C9B000882137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5D2812BD4C9B000882137 /* AppDelegate.swift */; };
 		94E5D2842BD4C9B000882137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5D2832BD4C9B000882137 /* SceneDelegate.swift */; };
 		94E5D2862BD4C9B000882137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5D2852BD4C9B000882137 /* ViewController.swift */; };
 		94E5D2892BD4C9B000882137 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 94E5D2882BD4C9B000882137 /* Base */; };
 		94E5D28B2BD4C9B100882137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94E5D28A2BD4C9B100882137 /* Assets.xcassets */; };
 		94E5D28E2BD4C9B100882137 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 94E5D28D2BD4C9B100882137 /* Base */; };
+		94E5D2982BD4CD1700882137 /* Bikeinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E5D2972BD4CD1700882137 /* Bikeinfo.swift */; };
+		94EA3D682BDCAB6800FD4976 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EA3D672BDCAB6800FD4976 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		941621FC2BDB9E1400FC8B7A /* PlaceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewController.swift; sourceTree = "<group>"; };
+		941621FE2BDB9FCF00FC8B7A /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		9466E6FA2BDCDAF70059E506 /* Iansui-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Iansui-Regular.ttf"; sourceTree = "<group>"; };
 		94E5D27E2BD4C9B000882137 /* JSONYouBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONYouBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E5D2812BD4C9B000882137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94E5D2832BD4C9B000882137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		94E5D28A2BD4C9B100882137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94E5D28D2BD4C9B100882137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94E5D28F2BD4C9B100882137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94E5D2972BD4CD1700882137 /* Bikeinfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bikeinfo.swift; sourceTree = "<group>"; };
+		94EA3D672BDCAB6800FD4976 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,15 @@
 				94E5D2812BD4C9B000882137 /* AppDelegate.swift */,
 				94E5D2832BD4C9B000882137 /* SceneDelegate.swift */,
 				94E5D2852BD4C9B000882137 /* ViewController.swift */,
+				941621FC2BDB9E1400FC8B7A /* PlaceTableViewController.swift */,
+				941621FE2BDB9FCF00FC8B7A /* PlaceTableViewCell.swift */,
+				94EA3D672BDCAB6800FD4976 /* InfoViewController.swift */,
+				94E5D2972BD4CD1700882137 /* Bikeinfo.swift */,
 				94E5D2872BD4C9B000882137 /* Main.storyboard */,
 				94E5D28A2BD4C9B100882137 /* Assets.xcassets */,
 				94E5D28C2BD4C9B100882137 /* LaunchScreen.storyboard */,
 				94E5D28F2BD4C9B100882137 /* Info.plist */,
+				9466E6FA2BDCDAF70059E506 /* Iansui-Regular.ttf */,
 			);
 			path = JSONYouBike;
 			sourceTree = "<group>";
@@ -127,6 +142,7 @@
 			files = (
 				94E5D28B2BD4C9B100882137 /* Assets.xcassets in Resources */,
 				94E5D28E2BD4C9B100882137 /* Base in Resources */,
+				9466E6FB2BDCDAF70059E506 /* Iansui-Regular.ttf in Resources */,
 				94E5D2892BD4C9B000882137 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E5D2982BD4CD1700882137 /* Bikeinfo.swift in Sources */,
 				94E5D2862BD4C9B000882137 /* ViewController.swift in Sources */,
+				941621FD2BDB9E1400FC8B7A /* PlaceTableViewController.swift in Sources */,
+				94EA3D682BDCAB6800FD4976 /* InfoViewController.swift in Sources */,
 				94E5D2822BD4C9B000882137 /* AppDelegate.swift in Sources */,
 				94E5D2842BD4C9B000882137 /* SceneDelegate.swift in Sources */,
+				941621FF2BDB9FCF00FC8B7A /* PlaceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
