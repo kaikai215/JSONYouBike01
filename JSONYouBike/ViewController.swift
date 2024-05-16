@@ -54,6 +54,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             URLSession.shared.dataTask(with: url) { data, respons, error in
                 if let data {
                     let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                     do{
                         let searchResponse = try decoder.decode([SearchBike].self, from: data)
                         self.item = searchResponse

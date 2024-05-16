@@ -10,10 +10,10 @@ import Foundation
 struct SearchBike: Codable {
     let sna: String//地點
     let sarea: String//行政區
-    let tot: Int//場站總停車格
-    let sbi: Int//場站目前車輛數量
-    let bemp: Int//空位數量
+    let total: Int//場站總停車格
+    let availableRentBikes: Int//場站目前車輛數量
+    let availableReturnBikes: Int//空位數量
     let updateTime: String//即時更新時間
-    let lat: Double
-    let lng: Double
+    let latitude: Double
+    let longitude: Double
 }

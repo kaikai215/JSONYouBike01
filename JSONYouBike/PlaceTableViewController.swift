@@ -37,6 +37,7 @@ class PlaceTableViewController: UITableViewController {
             URLSession.shared.dataTask(with: url) { data, response, error in
                 if let data  {
                     let decoder = JSONDecoder()
+                    decoder.keyDecodingStrategy = .convertFromSnakeCase
                     do{
                         let searchResponse = try decoder.decode([SearchBike].self, from: data)
                         //過濾 searchResponse 陣列，只保留那些 sarea 屬性等於 selectedDistrict 的 SearchBike 物件。這樣，items 陣列將只包含選定區域的站點。

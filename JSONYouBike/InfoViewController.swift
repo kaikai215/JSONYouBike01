@@ -30,9 +30,9 @@ class InfoViewController: UIViewController {
             bempLabel.font = UIFont(name: "Iansui-Regular", size: 30)
             updateTimeLabel.font = UIFont(name: "Iansui-Regular", size: 20)
             
-            totLabel.text = "總停車格：\(item.tot)"
-            sbiLabel.text = "可借的腳踏車數量：\(item.sbi)"
-            bempLabel.text = "可還的空位數量：\(item.bemp)"
+            totLabel.text = "總停車格：\(item.total)"
+            sbiLabel.text = "可借的腳踏車數量：\(item.availableRentBikes)"
+            bempLabel.text = "可還的空位數量：\(item.availableReturnBikes)"
             updateTimeLabel.text = "更新日期：" + item.updateTime
         }
     }
@@ -40,14 +40,13 @@ class InfoViewController: UIViewController {
     func showMapView(){
         guard let item = item else{ return }
         let annotation = MKPointAnnotation()
-        annotation.coordinate = CLLocationCoordinate2D(latitude: item.lat, longitude: item.lng)
+        annotation.coordinate = CLLocationCoordinate2D(latitude: item.latitude, longitude: item.longitude)
         annotation.title = item.sna
         
         showMap.addAnnotation(annotation)
         
         let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
         showMap.setRegion(region, animated: true)
-        print(item.lat , item.lng)
     }
 
     /*
